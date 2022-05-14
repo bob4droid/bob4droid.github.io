@@ -1,23 +1,223 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
 <style>
-body {
-    font-family: 'Roboto';font-size: 14pt;
+
+@font-face {
+  font-family: "Roboto";
+}
+
+
+
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
 
 }
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+        
+}
+
+.caret::before {
+  content: &quot;\25B6&quot;;
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  line-height: 2;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+  line-height: 2;
+}
+
 </style>
-</head>
-<body>
+<span style="font-family: 'Roboto'; font-size: 14pt; font-weight: normal; vertical-align: baseline;">►</span>
+<h2>BORRADOR</h2>
+<p>Se trata de un índice con estructura de árbol.</p>
+<p>Presiona en las flechas para desplegar y compactar las opciones.</p>
 
-<h1>Audiowide Font</h1>
-<p>Lorem ipsum dolor sit amet.</p>
-<p>1234567901</p>
-<p>&quot;\25B6&quot;</p>
-<p>► No encuentro cómo</p>
-</body>
+<ul id="myUL">
+
+
+      <li><span class="caret">Teeengo una duda, ¿por qué ...?</span>
+        <ul class="nested">
+
+          <li><span class="caret">¿Por qué tiene que ser exFAT?</span>
+            <ul class="nested">
+
+            </ul>          
+            <li><span class="caret">¿Por qué mupen64plus AE y no mupen64plus FZ?</span>
+            <ul class="nested">
+
+            </ul>          
+            <li><span class="caret">¿Por qué Yaba Sanshiro 2 PRO y no la versión Free?</span>
+            <ul class="nested">
+
+            </ul>
+          </li>
+        </ul>
+      </li>  
+      <li><span class="caret">Problemas siguiendo las instrucciones</span>
+        <ul class="nested">
+
+          <li><span class="caret">Tengo problemas al descomprimir</span>
+            <ul class="nested">
+
+            </ul>
+          </li>
+        </ul>
+      </li>  
+      <li><span class="caret">No encuentro cómo ...</span>
+        <ul class="nested">
+
+          <li><span class="caret">Salir de un emulador</span>
+            <ul class="nested">
+
+            </ul>
+          </li>          
+          <li><span class="caret">Ocultar/mostrar controles táctiles</span>
+            <ul class="nested">
+
+            </ul>
+          </li>          
+        </ul>
+      </li>  
+      <li><span class="caret">Algo no funciona (fallo total)</span>
+        <ul class="nested">
+
+          <li><span class="caret">En ARC Browser</span>
+            <ul class="nested">
+              <li><span class="caret">Se cierra al acceder a Settings (Android 11)</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+              <li><span class="caret">Error: "ARC Browser has crashed"</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="caret">En alguna plataforma (consola, portátil, ordenador, ...)</span>
+            <ul class="nested">
+
+            </ul>
+          </li>
+        </ul>
+      </li> 
+      <li><span class="caret">Algo funciona pero con fallos (fallo parcial)</span>
+        <ul class="nested">
+
+          <li><span class="caret">Aspecto visual</span>
+            <ul class="nested">
+              <li><span class="caret">ARC Browser</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+              <li><span class="caret">Naomi</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+              <li><span class="caret">PSP</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="caret">Bajo rendimiento</span>
+            <ul class="nested">
+              <li><span class="caret">PUAE</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+              <li><span class="caret">X68000</span>
+                <ul class="nested">
+    
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li> 
+      <li><span class="caret">Quiero hacer cambios</span>
+        <ul class="nested">
+
+          <li><span class="caret">Modificar algo que existe</span>
+            <ul class="nested">
+              <li><span class="caret">ARC Browser</span>
+                <ul class="nested">
+                  <li><span class="caret">Volumen</span>
+                    <ul class="nested">
+        
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="caret">Añadir algo nuevo</span>
+            <ul class="nested">
+
+              <li><span class="caret">En ARC Browser</span>
+                <ul class="nested">
+                  <li><span class="caret">Añadir roms propias</span>
+                    <ul class="nested">
+        
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+          
+            </ul>
+          </li>
+        </ul>
+      </li> 
+</ul>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
 </html>
-
-
